@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 03</h1>
+    <h2>Sobre pedidos de clientes em um loja</h2>
+    <div id="resultado"></div>
+    <script>
+        const  bigSuperSanduba = 5
+        const  quaseSuperSanduba = 3
+        const  mirradusSanduba = 1.5
+    
+        let pedido = prompt("Digite o código do pedido (1 - 2 - 3 )")
+        let msg;
+
+        if(pedido == 1){
+            msg = "big Super sanduba  $5,00"
+        }
+
+        if(pedido == 2){
+            msg = "quase Super sanduba  $3,00"
+        }
+
+        if(pedido == 3){
+            msg = "mirradus Sanduba  %1,50"
+        }
+
+        document.getElementById("resultado").innerHTML = msg;
+
+
+    </script>
+      
+    
+
+
+</body>
+</html>

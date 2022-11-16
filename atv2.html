@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 02</h1>
+    <h2>Sobre pessoas e seus pesos </h2>
+    ,<div id="resultado"></div>
+    <script>
+        let nome1 = prompt("Digite o primeiro nome")
+        let nome2 = prompt("Digite o segundo nome")
+        let nome3 = prompt("Digite o terceiro nome")
+        let peso1 = prompt("Digite o primeiro peso")
+        let peso2 = prompt("Digite o segundo peso")
+        let peso3 = prompt("Digite o primeiro peso")
+           
+         let troca;
+
+        if(peso2 > peso1){
+            troca = peso2;
+            peso2 = peso1;
+            peso1 = troca;
+        }   
+        if(peso3 > peso1){
+            troca = peso3;
+            peso3 = peso1;
+            peso1 = troca;
+        }   
+         if(peso3 > peso2){
+            troca = peso3;
+            peso3 = peso2;
+            peso2 = troca;
+         }   
+            
+        document.getElementById("resultado").innerHTML = "Nome: " + nome1 + ", peso: " + peso1 + "</br>Nome: " + nome2 + ", peso: " + peso2 + "</br>Nome: " + nome3 + ", peso: " + peso3;
+
+
+
+    </script>
+
+</body>
+</html>

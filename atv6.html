@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 06</h1>
+    <h2>sobre valor de comissão por vendas</h2>
+    <div id="resultado"></div>
+    <script>
+        let funcionario = prompt("Digite o nome do funcionario")
+        let vendas = prompt("total de vendas do funcionario")
+        let comissao;
+
+        if(vendas <=250){
+            comissao = vendas * 1;
+
+        }
+         if(vendas>250){
+            comissao = vendas * 1.5;
+
+        }
+        if(vendas> 500) { 
+            comissao =vendas * 2 ;
+        
+        }
+           
+        
+           
+        
+
+        document.getElementById("resultado").innerHTML = "Nome: " + funcionario + "</br>Comissão: " + comissao;
+
+
+    </script>
+
+</body>
+</html>
